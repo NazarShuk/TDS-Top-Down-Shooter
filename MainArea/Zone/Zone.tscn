@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://g8xgca14wjpt"]
+[gd_scene load_steps=6 format=3 uid="uid://g8xgca14wjpt"]
 
 [ext_resource type="PackedScene" uid="uid://dbf7jdsdyu736" path="res://MainArea/SpawnArea/SpawnArea.tscn" id="2_3qgr1"]
 [ext_resource type="PackedScene" uid="uid://bb2f4y86c6rs0" path="res://Player/PlayerScope.tscn" id="2_e77uq"]
 [ext_resource type="Script" uid="uid://civ8o635itx13" path="res://MainArea/Zone/MoneyDisplay.cs" id="3_3qgr1"]
+[ext_resource type="FontFile" uid="uid://bmt2fn2bclqqm" path="res://Assets/font/VCR_OSD_MONO_1.001.ttf" id="3_e1k2l"]
 [ext_resource type="Script" uid="uid://v4b8kktxeol4" path="res://MainArea/Zone/ExitHandler.cs" id="4_7ojsc"]
 
 [node name="Zone" type="Node2D"]
@@ -24,8 +25,9 @@ offset_left = -40.0
 offset_top = -15.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_e1k2l")
 theme_override_font_sizes/font_size = 32
-text = "g="
+text = "When the gccler gccs"
 script = ExtResource("3_3qgr1")
 
 [node name="ExitHandler" type="Node" parent="."]

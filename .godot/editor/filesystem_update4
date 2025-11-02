@@ -1,0 +1,12 @@
+res://Enemy/EnemyBasic/HealthHandler.cs
+res://Enemy/EnemyBasic/HurtBox.cs
+res://Enemy/EnemyBasic/MovementHandler.cs
+res://Global/Global.cs
+res://MainArea/SpawnArea/SpawnArea.cs
+res://MainArea/Zone/ExitHandler.cs
+res://MainArea/Zone/MoneyDisplay.cs
+res://MainMenu/CloseGame.cs
+res://MainMenu/JoinGame.cs
+res://Player/HurtHandler.cs
+res://Player/MovementHandler.cs
+res://MainArea/Zone/Zone.tscn

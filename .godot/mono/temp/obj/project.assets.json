@@ -94,11 +94,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\tds\\TDS-Top-Down-Shooter-\\tds (top down shooter).csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\tds\\tds (top down shooter).csproj",
       "projectName": "tds (top down shooter)",
-      "projectPath": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\tds\\TDS-Top-Down-Shooter-\\tds (top down shooter).csproj",
+      "projectPath": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\tds\\tds (top down shooter).csproj",
       "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\tds\\TDS-Top-Down-Shooter-\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\tds\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

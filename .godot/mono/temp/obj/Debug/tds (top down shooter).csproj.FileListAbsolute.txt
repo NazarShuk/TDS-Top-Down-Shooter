@@ -16,3 +16,21 @@ C:\Users\alexa\OneDrive\Documents\GitHub\tds\TDS-Top-Down-Shooter-\.godot\mono\t
 C:\Users\alexa\OneDrive\Documents\GitHub\tds\TDS-Top-Down-Shooter-\.godot\mono\temp\obj\Debug\tds (top down shooter).pdb
 C:\Users\alexa\OneDrive\Documents\GitHub\tds\TDS-Top-Down-Shooter-\.godot\mono\temp\obj\Debug\tds (top down shooter).genruntimeconfig.cache
 C:\Users\alexa\OneDrive\Documents\GitHub\tds\TDS-Top-Down-Shooter-\.godot\mono\temp\obj\Debug\ref\tds (top down shooter).dll
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\bin\Debug\tds (top down shooter).deps.json
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\bin\Debug\tds (top down shooter).runtimeconfig.json
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\bin\Debug\tds (top down shooter).dll
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\bin\Debug\tds (top down shooter).pdb
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top down shooter).csproj.AssemblyReference.cache
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top down shooter).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top down shooter).AssemblyInfoInputs.cache
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top down shooter).AssemblyInfo.cs
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top down shooter).csproj.CoreCompileInputs.cache
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top down shooter).sourcelink.json
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top.F90EDF0C.Up2Date
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top down shooter).dll
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\refint\tds (top down shooter).dll
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top down shooter).pdb
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\tds (top down shooter).genruntimeconfig.cache
+C:\Users\alexa\OneDrive\Documents\GitHub\tds\.godot\mono\temp\obj\Debug\ref\tds (top down shooter).dll

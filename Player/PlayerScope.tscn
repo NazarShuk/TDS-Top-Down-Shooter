@@ -5,12 +5,12 @@
 [ext_resource type="Script" uid="uid://vaquojxrce4f" path="res://Player/HurtHandler.cs" id="3_fxi57"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hg043"]
-radius = 50.0
+radius = 25.0
 
 [node name="PlayerScope" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_xmlvk")
 
 [node name="MovementHandler" type="Node" parent="."]

@@ -26,7 +26,7 @@ offset_top = -15.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("3_e1k2l")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 16
 text = "When the gccler gccs"
 script = ExtResource("3_3qgr1")
 

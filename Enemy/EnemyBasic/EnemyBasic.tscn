@@ -1,13 +1,49 @@
-[gd_scene load_steps=9 format=3 uid="uid://ciugiajkkmue0"]
+[gd_scene load_steps=14 format=3 uid="uid://ciugiajkkmue0"]
 
-[ext_resource type="Texture2D" uid="uid://pku7tnoyxal8" path="res://icon.svg" id="1_bl6r4"]
+[ext_resource type="Texture2D" uid="uid://djpyi1otejb5i" path="res://Assets/Image/skel.png" id="1_wq1o6"]
 [ext_resource type="Script" uid="uid://d0jxg8pjx5kfh" path="res://Enemy/EnemyBasic/MovementHandler.cs" id="2_hbyaf"]
 [ext_resource type="Script" uid="uid://d30mfysiwa6i1" path="res://Enemy/EnemyBasic/HurtBox.cs" id="2_iddve"]
 [ext_resource type="FontFile" uid="uid://bmt2fn2bclqqm" path="res://Assets/font/VCR_OSD_MONO_1.001.ttf" id="3_iddve"]
 [ext_resource type="Script" uid="uid://cvivnmx7m8f3t" path="res://Enemy/EnemyBasic/HealthHandler.cs" id="4_wq1o6"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_w708m"]
+atlas = ExtResource("1_wq1o6")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xsv0l"]
+atlas = ExtResource("1_wq1o6")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5c3o"]
+atlas = ExtResource("1_wq1o6")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvwp4"]
+atlas = ExtResource("1_wq1o6")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5fbgk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w708m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xsv0l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5c3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvwp4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bl6r4"]
-size = Vector2(60, 60)
+size = Vector2(60, 110.135)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wq1o6"]
 bg_color = Color(7.52043e-08, 0.19499633, 0.11082462, 1)
@@ -16,10 +52,13 @@ bg_color = Color(7.52043e-08, 0.19499633, 0.11082462, 1)
 bg_color = Color(0, 0.7137255, 0.45490196, 1)
 
 [node name="EnemyBasic" type="Node2D"]
+scale = Vector2(0.75, 0.75)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_bl6r4")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5fbgk")
+autoplay = "default"
+frame = 1
+frame_progress = 0.60388994
 
 [node name="HurtBox" type="Area2D" parent="."]
 script = ExtResource("2_iddve")
@@ -35,9 +74,9 @@ script = ExtResource("4_wq1o6")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = -30.0
-offset_top = -60.0
+offset_top = -75.0
 offset_right = 30.0
-offset_bottom = -41.0
+offset_bottom = -56.0
 theme_override_fonts/font = ExtResource("3_iddve")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/background = SubResource("StyleBoxFlat_wq1o6")

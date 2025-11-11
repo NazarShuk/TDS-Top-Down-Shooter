@@ -11,7 +11,7 @@ public partial class SpawnArea : Node2D
     public float SpawnMaxRange = 340f;
     
     [Export]
-    public float SpawnMinRange = 50f;
+    public float SpawnMinRange = 90f;
     
     private Timer _timer;
     private RandomNumberGenerator _rng;
@@ -30,19 +30,19 @@ public partial class SpawnArea : Node2D
 
     private string PickEnemy()
     {
-        var totalWeight = Global.enemies.Sum(e => e.weight);
+        var totalWeight = Global.Enemies.Sum(e => e.weight);
 
         var pick = _rng.RandfRange(0f, totalWeight);
         var cumulative = 0f;
 
-        foreach (var e in Global.enemies)
+        foreach (var e in Global.Enemies)
         {
             cumulative += e.weight;
             if (pick <= cumulative)
                 return e.path;
         }
 
-        return Global.enemies[^1].path;
+        return Global.Enemies[^1].path;
     }
 
     private void TimerOnTimeout()

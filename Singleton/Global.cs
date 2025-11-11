@@ -11,7 +11,7 @@ public partial class Global : Node
     public static float Radius = 50.0f;
 
     // Info:
-    public static readonly (string path, float weight)[] enemies =
+    public static readonly (string path, float weight)[] Enemies =
     [
         ("res://Enemy/EnemyBasic/EnemyBasic.tscn", .7f),
         ("res://Enemy/EnemySpeedy/EnemySpeedy.tscn", .3f)

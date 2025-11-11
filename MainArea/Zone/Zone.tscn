@@ -52,3 +52,6 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_r3nfy")
 max_value = 1000.0
 value = 1000.0
 script = ExtResource("7_opqtp")
+_green = Color(1.0348111e-06, 0.72033894, 1.540184e-06, 1)
+_yellow = Color(0.73333335, 0.69411767, 0.07058824, 1)
+_red = Color(0.87734634, 3.8745256e-06, 1.2513996e-06, 1)

@@ -14,3 +14,5 @@ res://MainArea/Zone/ExitHandler.cs
 res://MainArea/Zone/MoneyDisplay.cs
 res://Enemy/EnemyBasic/HealthHandler.cs
 res://MainArea/Zone/Zone.tscn
+res://Enemy/EnemyBasic/EnemyHpBar.cs
+res://Enemy/EnemyBasic/EnemyBasic.tscn

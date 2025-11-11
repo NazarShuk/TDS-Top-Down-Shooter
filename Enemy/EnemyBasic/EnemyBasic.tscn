@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ciugiajkkmue0"]
+[gd_scene load_steps=16 format=3 uid="uid://ciugiajkkmue0"]
 
 [ext_resource type="Script" uid="uid://bq2ckinjtgbrd" path="res://Enemy/EnemyBasic/EnemyBasic.cs" id="1_w708m"]
 [ext_resource type="Texture2D" uid="uid://djpyi1otejb5i" path="res://Assets/Image/EnemyBasic.png" id="1_wq1o6"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://d30mfysiwa6i1" path="res://Enemy/EnemyBasic/HurtBox.cs" id="2_iddve"]
 [ext_resource type="FontFile" uid="uid://bmt2fn2bclqqm" path="res://Assets/font/VCR_OSD_MONO_1.001.ttf" id="3_iddve"]
 [ext_resource type="Script" uid="uid://cvivnmx7m8f3t" path="res://Enemy/EnemyBasic/HealthHandler.cs" id="4_wq1o6"]
+[ext_resource type="Script" uid="uid://crm82l5gjmw3p" path="res://Enemy/EnemyBasic/EnemyHpBar.cs" id="7_xsv0l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w708m"]
 atlas = ExtResource("1_wq1o6")
@@ -74,7 +75,7 @@ script = ExtResource("2_hbyaf")
 [node name="HealthHandler" type="Node" parent="."]
 script = ExtResource("4_wq1o6")
 
-[node name="ProgressBar" type="ProgressBar" parent="."]
+[node name="EnemyHpBar" type="ProgressBar" parent="."]
 offset_left = -30.0
 offset_top = -75.0
 offset_right = 30.0
@@ -84,3 +85,4 @@ theme_override_font_sizes/font_size = 20
 theme_override_styles/background = SubResource("StyleBoxFlat_wq1o6")
 theme_override_styles/fill = SubResource("StyleBoxFlat_w708m")
 value = 100.0
+script = ExtResource("7_xsv0l")

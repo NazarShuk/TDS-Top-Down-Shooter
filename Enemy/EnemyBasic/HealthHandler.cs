@@ -13,7 +13,7 @@ public partial class HealthHandler : Node
     
     public override void _Ready()
     {
-        _progressBar = GetNode<ProgressBar>("../ProgressBar");
+        _progressBar = GetNode<ProgressBar>("../EnemyHpBar");
 
         if (_progressBar != null)
         {
@@ -33,7 +33,6 @@ public partial class HealthHandler : Node
     public void TakeDamage(int damage)
     {
         CurrentHealth -= damage;
-        _progressBar.Value = CurrentHealth;
         
         GD.Print($"{damage} Damage Taken.");
         

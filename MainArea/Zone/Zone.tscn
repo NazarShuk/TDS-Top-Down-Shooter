@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://g8xgca14wjpt"]
+[gd_scene load_steps=13 format=3 uid="uid://g8xgca14wjpt"]
 
 [ext_resource type="PackedScene" uid="uid://dbf7jdsdyu736" path="res://MainArea/SpawnArea/SpawnArea.tscn" id="2_3qgr1"]
 [ext_resource type="PackedScene" uid="uid://bb2f4y86c6rs0" path="res://Player/PlayerScope.tscn" id="2_e77uq"]
@@ -7,12 +7,18 @@
 [ext_resource type="Script" uid="uid://v4b8kktxeol4" path="res://MainArea/Zone/ExitHandler.cs" id="4_7ojsc"]
 [ext_resource type="PackedScene" uid="uid://cqp1dlvqjcpd2" path="res://MainArea/DeathArea/DeathArea.tscn" id="6_wltj2"]
 [ext_resource type="Script" uid="uid://dcqveumd0xa44" path="res://MainArea/Zone/HpBar.cs" id="7_opqtp"]
+[ext_resource type="Script" uid="uid://bt5bmpkxob1ws" path="res://MainArea/Zone/Camera2d.cs" id="8_aejgc"]
+[ext_resource type="Script" uid="uid://ds37w0vkuy8ny" path="res://Utils/Shaker.cs" id="8_r3nfy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wltj2"]
 bg_color = Color(0, 0.19607843, 0.10980392, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r3nfy"]
 bg_color = Color(0, 0.7137255, 0.45490196, 1)
+
+[sub_resource type="Curve" id="Curve_aejgc"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
 
 [node name="Zone" type="Node2D"]
 
@@ -56,5 +62,15 @@ _green = Color(1.0348111e-06, 0.72033894, 1.540184e-06, 1)
 _yellow = Color(0.73333335, 0.69411767, 0.07058824, 1)
 _red = Color(0.87734634, 3.8745256e-06, 1.2513996e-06, 1)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("_shaker")]
 offset = Vector2(320, 180)
+script = ExtResource("8_aejgc")
+_shaker = NodePath("Shaker")
+
+[node name="Shaker" type="Node" parent="Camera2D" node_paths=PackedStringArray("_target")]
+script = ExtResource("8_r3nfy")
+_target = NodePath("..")
+_variable = &"position"
+_curve = SubResource("Curve_aejgc")
+_duration = 0.5
+_strength = 2.5
